@@ -1,12 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+from dotenv import load_dotenv
+import os
 
 # Đo thời gian
 start_time = time.time()
 
-username = "0909484509" 
-password = "Mbf123456@" 
 
 # Thiết lập ChromeDriver
 options = webdriver.ChromeOptions() 
@@ -28,10 +28,10 @@ try:
     btnLogin.click()
 
     input_username = driver.find_element(By.CLASS_NAME, "input-user")
-    input_username.send_keys(username)
+    input_username.send_keys(os.getenv("username"))
 
     input_password = driver.find_element(By.CLASS_NAME, "input-pass")
-    input_password.send_keys(password)
+    input_password.send_keys(os.getenv("password"))
 
     driver.find_element(By.CLASS_NAME, "btn-submit-login").click()
 
