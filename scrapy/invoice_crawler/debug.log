@@ -1,0 +1,1920 @@
+2025-06-17 20:18:22 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 20:18:22 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 20:18:22 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 20:18:22 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 20:18:22 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 20:18:22 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 20:18:22 [scrapy.extensions.telnet] INFO: Telnet Password: aed25670451a8c77
+2025-06-17 20:18:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 20:18:22 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 20:18:23 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 20:18:23 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 20:18:23 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 20:18:23 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 20:18:23 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 20:18:23 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 20:18:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 20:18:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 20:18:23 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 20:18:23 [evn_direct_login] INFO: Dữ liệu form: {'as_sfid': 'AAAAAAWeVforlviEj5hYvr_kqiAez0YFlV1kAEMnK0Qgu7SY_GkAcCE3Js9BOv2kMJvqQm8suj6GMObkmlfZc05wbziDbIcK-d8AugjMROWTvUHrRkUy08s0I-bzRQxDc6y7UnIJbUT1Srfo_5sucLpdqD8RSg7CPb2VgP6bkCkPyIBSqQ==', 'as_fid': '2ad51b806c22cc3a7081de2b9a9c81e500d18add', 'input-user': '0909484509', 'input-pass': 'Mbf123456@', 'btn-submit-login': 'ĐĂNG NHẬP'}
+2025-06-17 20:18:23 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Tracuu/HDDT)
+2025-06-17 20:18:23 [evn_direct_login] INFO: Response sau khi đăng nhập: <!DOCTYPE html>
+
+<html lang="vi">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="EVNHCMC">
+
+    <link rel="icon" type="image/png" href="https://www.evnhcmc.vn/public/images/icon-evn.png" />
+
+
+
+    <meta property="og:site_name" content="evnhcmc.vn" />
+
+    <meta property="og:rich_attachment" content="true" />
+
+    <meta property="article:pub
+2025-06-17 20:18:23 [evn_direct_login] ERROR: Đăng nhập thất bại, kiểm tra thông tin tài khoản, form data hoặc URL
+2025-06-17 20:18:23 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 20:18:23 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1691,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 343286,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 0.464053,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 13, 18, 23, 734499, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 6,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 13,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'responses_per_minute': None,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2025, 6, 17, 13, 18, 23, 270446, tzinfo=datetime.timezone.utc)}
+2025-06-17 20:18:23 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 20:18:48 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 20:18:48 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 20:18:48 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 20:18:48 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 20:18:48 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 20:18:48 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 20:18:48 [scrapy.extensions.telnet] INFO: Telnet Password: 9d36943276a2fac7
+2025-06-17 20:18:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2025-06-17 20:18:48 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 20:18:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 20:18:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 20:18:49 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 20:18:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 20:18:49 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 20:18:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 20:18:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 20:18:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 20:18:49 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 20:18:49 [evn_direct_login] INFO: Dữ liệu form: {'as_sfid': 'AAAAAAVzxLMmlTNK_EmTcSTT50bgF315bThtn7wMlGSOL2-SCOOlDqvdUAdHkMY8aPUQjOw7WJJiTCQaKsuhOpHoTCVWnXiuULd1pu8T_9wpT835B8q3XTrE42agCBExexJT23fnUUQ7gWTFkKKzHm7uSp_7N-QwVjBTXUmjxecKvnb_Jw==', 'as_fid': '2ad51b806c22cc3a7081de2b9a9c81e500d18add', 'input-user': '0909484509', 'input-pass': 'Mbf123456@', 'btn-submit-login': 'ĐĂNG NHẬP'}
+2025-06-17 20:18:49 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Tracuu/HDDT)
+2025-06-17 20:18:49 [evn_direct_login] INFO: Response sau khi đăng nhập: <!DOCTYPE html>
+
+<html lang="vi">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="EVNHCMC">
+
+    <link rel="icon" type="image/png" href="https://www.evnhcmc.vn/public/images/icon-evn.png" />
+
+
+
+    <meta property="og:site_name" content="evnhcmc.vn" />
+
+    <meta property="og:rich_attachment" content="true" />
+
+    <meta property="article:pub
+2025-06-17 20:18:49 [evn_direct_login] ERROR: Đăng nhập thất bại, kiểm tra thông tin tài khoản, form data hoặc URL
+2025-06-17 20:24:03 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 20:24:03 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 20:24:03 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 20:24:03 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 20:24:03 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 20:24:03 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 20:24:03 [scrapy.extensions.telnet] INFO: Telnet Password: 522423915f23ff09
+2025-06-17 20:24:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 20:24:03 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 20:24:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 20:24:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 20:24:04 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 20:24:04 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 20:24:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 20:24:04 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 20:24:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 20:24:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 20:24:04 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Tracuu/HDDT)
+2025-06-17 20:24:04 [evn_direct_login] ERROR: Đăng nhập thất bại, kiểm tra thông tin tài khoản hoặc form data
+2025-06-17 20:24:04 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 20:24:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1691,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 343286,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 0.498826,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 13, 24, 4, 845682, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 6,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'responses_per_minute': None,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2025, 6, 17, 13, 24, 4, 346856, tzinfo=datetime.timezone.utc)}
+2025-06-17 20:24:04 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 20:42:04 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 20:42:04 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 20:42:04 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 20:42:04 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 20:42:04 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 20:42:04 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 20:42:04 [scrapy.extensions.telnet] INFO: Telnet Password: 210a430e4ffb78c0
+2025-06-17 20:42:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 20:42:04 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 20:42:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 20:42:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 20:42:05 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 20:42:05 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 20:42:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 20:42:05 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 20:42:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 20:42:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 20:42:05 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 20:42:05 [evn_direct_login] INFO: Dữ liệu form: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 20:42:07 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 20:42:07 [evn_direct_login] INFO: Response sau khi đăng nhập: {"state":"success","alert":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng !","data":[]}...
+2025-06-17 20:42:07 [evn_direct_login] ERROR: Đăng nhập thất bại: Không có thông báo lỗi
+2025-06-17 20:42:07 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 20:42:07 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1365,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 173419,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 1.944481,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 13, 42, 7, 136526, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': 0.0,
+ 'log_count/DEBUG': 6,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 13,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'responses_per_minute': 180.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2025, 6, 17, 13, 42, 5, 192045, tzinfo=datetime.timezone.utc)}
+2025-06-17 20:42:07 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 20:45:36 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 20:45:36 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 20:45:36 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 20:45:36 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 20:45:36 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 20:45:36 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 20:45:36 [scrapy.extensions.telnet] INFO: Telnet Password: fac1a9a8d93a35a4
+2025-06-17 20:45:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 20:45:36 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 20:45:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 20:45:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 20:45:37 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 20:45:37 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 20:45:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 20:45:37 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 20:45:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 20:45:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 20:45:37 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 20:45:37 [evn_direct_login] INFO: Dữ liệu form: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 20:45:37 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 20:45:38 [evn_direct_login] INFO: Response sau khi đăng nhập: {"state":"success","alert":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng !","data":[]}...
+2025-06-17 20:45:38 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 20:45:38 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.evnhcmc.vn/Tracuu/HDDT> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2025-06-17 20:45:38 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 20:45:38 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1365,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 173419,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 0.79112,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 13, 45, 38, 100441, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 14,
+ 'request_depth_max': 2,
+ 'response_received_count': 3,
+ 'responses_per_minute': None,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2025, 6, 17, 13, 45, 37, 309321, tzinfo=datetime.timezone.utc)}
+2025-06-17 20:45:38 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 20:49:26 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 20:49:26 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 20:49:26 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 20:49:26 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 20:49:26 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 20:49:26 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 20:49:26 [scrapy.extensions.telnet] INFO: Telnet Password: 83b6fffbc2c061f4
+2025-06-17 20:49:26 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 20:49:26 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 20:49:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 20:49:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 20:49:26 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 20:49:26 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 20:49:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 20:49:26 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 20:49:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 20:49:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 20:49:27 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 20:49:27 [evn_direct_login] INFO: Dữ liệu form: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 20:49:27 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 20:49:27 [evn_direct_login] INFO: Response sau khi đăng nhập: {"state":"success","alert":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng !","data":[]}...
+2025-06-17 20:49:27 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 20:49:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+2025-06-17 20:49:27 [evn_direct_login] INFO: Dữ liệu form tra cứu: {'__VIEWSTATE': None, '__VIEWSTATEGENERATOR': None, '__EVENTVALIDATION': None, 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtMaKhachHang': 'PE13000133890', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlKyHD': '5', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnTraCuu': 'Tra cứu'}
+2025-06-17 20:49:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+             ^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+             ^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+             ^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+             ^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "D:\Đại học\Năm 3\Thực tập\scrapy\invoice_crawler\invoice_crawler\spiders\invoice_spider.py", line 90, in parse
+    yield FormRequest(
+          ^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\http\request\form.py", line 51, in __init__
+    form_query_str = _urlencode(items, self.encoding)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\http\request\form.py", line 108, in _urlencode
+    (to_bytes(k, enc), to_bytes(v, enc))
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\utils\python.py", line 138, in to_bytes
+    raise TypeError(
+TypeError: to_bytes must receive a str or bytes object, got NoneType
+2025-06-17 20:49:27 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 20:49:27 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2022,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 349965,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 1.014423,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 13, 49, 27, 810306, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': 0.0,
+ 'log_count/DEBUG': 7,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 15,
+ 'request_depth_max': 2,
+ 'response_received_count': 4,
+ 'responses_per_minute': 240.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'spider_exceptions/TypeError': 1,
+ 'spider_exceptions/count': 1,
+ 'start_time': datetime.datetime(2025, 6, 17, 13, 49, 26, 795883, tzinfo=datetime.timezone.utc)}
+2025-06-17 20:49:27 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 20:57:25 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 20:57:25 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 20:57:25 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 20:57:25 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 20:57:25 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 20:57:25 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 20:57:25 [scrapy.extensions.telnet] INFO: Telnet Password: 17f50a81623c763b
+2025-06-17 20:57:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 20:57:25 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 20:57:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 20:57:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 20:57:25 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 20:57:25 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 20:57:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 20:57:25 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 20:57:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 20:57:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 20:57:26 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 20:57:26 [evn_direct_login] INFO: Dữ liệu form: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 20:57:26 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 20:57:26 [evn_direct_login] INFO: Response sau khi đăng nhập: {"state":"success","alert":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng !","data":[]}...
+2025-06-17 20:57:26 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 20:57:26 [scrapy.core.engine] DEBUG: Crawled (404) <POST https://www.evnhcmc.vn/Tracuu/ajaxds_hoadon> (referer: https://www.evnhcmc.vn/Tracuu/HDDT)
+2025-06-17 20:57:26 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.evnhcmc.vn/Tracuu/ajaxds_hoadon>: HTTP status code is not handled or not allowed
+2025-06-17 20:57:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 20:57:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2165,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 2,
+ 'downloader/response_bytes': 175269,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 0.804106,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 13, 57, 26, 749311, tzinfo=datetime.timezone.utc),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 15,
+ 'request_depth_max': 2,
+ 'response_received_count': 4,
+ 'responses_per_minute': None,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2025, 6, 17, 13, 57, 25, 945205, tzinfo=datetime.timezone.utc)}
+2025-06-17 20:57:26 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 21:04:15 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 21:04:15 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 21:04:15 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 21:04:15 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 21:04:15 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 21:04:15 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 21:04:15 [scrapy.extensions.telnet] INFO: Telnet Password: 6a7197047e4282ce
+2025-06-17 21:04:15 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 21:04:15 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 21:04:15 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 21:04:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 21:04:15 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 21:04:15 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 21:04:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 21:04:15 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 21:04:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 21:04:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 21:04:15 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 21:04:15 [evn_direct_login] INFO: Dữ liệu form: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 21:04:16 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 21:04:16 [evn_direct_login] INFO: Response sau khi đăng nhập: {"state":"success","alert":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng !","data":[]}...
+2025-06-17 21:04:16 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 21:04:16 [evn_direct_login] INFO: Dữ liệu form tra cứu: {'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtMaKhachHang': 'PE13000133890', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlKyHD': '5', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnTraCuu': 'Tra cứu'}
+2025-06-17 21:04:16 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+2025-06-17 21:04:16 [evn_direct_login] WARNING: Không tìm thấy liên kết XML trong response
+2025-06-17 21:04:16 [evn_direct_login] INFO: Response HTML: <!DOCTYPE html>
+
+<html lang="vi">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="EVNHCMC">
+
+    <link rel="icon" type="image/png" href="https://www.evnhcmc.vn/public/images/icon-evn.png" />
+
+
+
+    <meta property="og:site_name" content="evnhcmc.vn" />
+
+    <meta property="og:rich_attachment" content="true" />
+
+    <meta property="article:pub...
+2025-06-17 21:04:16 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 21:04:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2316,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 2,
+ 'downloader/response_bytes': 350170,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 0.912062,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 14, 4, 16, 480678, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 16,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 2,
+ 'response_received_count': 4,
+ 'responses_per_minute': None,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2025, 6, 17, 14, 4, 15, 568616, tzinfo=datetime.timezone.utc)}
+2025-06-17 21:04:16 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 21:09:32 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 21:09:32 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 21:09:32 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 21:09:32 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 21:09:32 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 21:09:32 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 21:09:32 [scrapy.extensions.telnet] INFO: Telnet Password: dde415002bfc345c
+2025-06-17 21:09:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 21:09:32 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 21:09:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 21:09:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 21:09:33 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 21:09:33 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 21:09:33 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 21:09:33 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 21:09:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 21:09:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 21:09:33 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 21:09:33 [evn_direct_login] INFO: Dữ liệu form: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 21:09:33 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 21:09:33 [evn_direct_login] INFO: Response sau khi đăng nhập: {"state":"success","alert":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng !","data":[]}...
+2025-06-17 21:09:33 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 21:09:33 [evn_direct_login] INFO: Dữ liệu form tra cứu: {'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtMaKhachHang': 'PE13000133890', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlKyHD': '5', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnTraCuu': 'Tra cứu'}
+2025-06-17 21:09:33 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+2025-06-17 21:09:34 [evn_direct_login] WARNING: Không tìm thấy liên kết XML trong response
+2025-06-17 21:09:34 [evn_direct_login] INFO: Response HTML: <!DOCTYPE html>
+
+<html lang="vi">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="EVNHCMC">
+
+    <link rel="icon" type="image/png" href="https://www.evnhcmc.vn/public/images/icon-evn.png" />
+
+
+
+    <meta property="og:site_name" content="evnhcmc.vn" />
+
+    <meta property="og:rich_attachment" content="true" />
+
+    <meta property="article:pub...
+2025-06-17 21:09:34 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 21:09:34 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2316,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 2,
+ 'downloader/response_bytes': 349798,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 0.967675,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 14, 9, 34, 9309, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 16,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 2,
+ 'response_received_count': 4,
+ 'responses_per_minute': None,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2025, 6, 17, 14, 9, 33, 41634, tzinfo=datetime.timezone.utc)}
+2025-06-17 21:09:34 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 21:24:11 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 21:24:11 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 21:24:11 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 21:24:11 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 21:24:11 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 21:24:11 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 21:24:11 [scrapy.extensions.telnet] INFO: Telnet Password: ba94fba3d601689b
+2025-06-17 21:24:11 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 21:24:11 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 21:24:11 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 21:24:11 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 21:24:11 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 21:24:11 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 21:24:11 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 21:24:11 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 21:24:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 21:24:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 21:24:12 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 21:24:12 [evn_direct_login] INFO: Dữ liệu form: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 21:24:12 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 21:24:12 [evn_direct_login] INFO: Response sau khi đăng nhập: {"state":"success","alert":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng !","data":[]}...
+2025-06-17 21:24:12 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 21:24:12 [evn_direct_login] INFO: Dữ liệu form tra cứu: {'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtMaKhachHang': 'PE13000133890', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlKyHD': '5', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnTraCuu': 'Tra cứu'}
+2025-06-17 21:24:12 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+2025-06-17 21:24:12 [evn_direct_login] INFO: Đã tìm thấy 5 nút tải xuống
+2025-06-17 21:24:12 [evn_direct_login] WARNING: Nút tải xuống không hợp lệ: idhd=, loaihd=PDF-ChiTiet
+2025-06-17 21:24:12 [evn_direct_login] WARNING: Nút tải xuống không hợp lệ: idhd=, loaihd=PDF
+2025-06-17 21:24:12 [evn_direct_login] WARNING: Nút tải xuống không hợp lệ: idhd=, loaihd=XML
+2025-06-17 21:24:12 [evn_direct_login] WARNING: Nút tải xuống không hợp lệ: idhd=None, loaihd=PDF
+2025-06-17 21:24:12 [evn_direct_login] WARNING: Nút tải xuống không hợp lệ: idhd=None, loaihd=XML
+2025-06-17 21:24:12 [evn_direct_login] WARNING: Không tìm thấy liên kết XML trong response từ HTML
+2025-06-17 21:24:12 [evn_direct_login] INFO: Response HTML: <!DOCTYPE html>
+
+<html lang="vi">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="EVNHCMC">
+
+    <link rel="icon" type="image/png" href="https://www.evnhcmc.vn/public/images/icon-evn.png" />
+
+
+
+    <meta property="og:site_name" content="evnhcmc.vn" />
+
+    <meta property="og:rich_attachment" content="true" />
+
+    <meta property="article:pub...
+2025-06-17 21:24:12 [scrapy.core.engine] DEBUG: Crawled (404) <POST https://www.evnhcmc.vn/Tracuu/ajaxds_hoadon> (referer: https://www.evnhcmc.vn/Tracuu/HDDT)
+2025-06-17 21:24:12 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.evnhcmc.vn/Tracuu/ajaxds_hoadon>: HTTP status code is not handled or not allowed
+2025-06-17 21:24:12 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 21:24:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3116,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 3,
+ 'downloader/response_bytes': 351815,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 4,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 1.115599,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 14, 24, 12, 936316, tzinfo=datetime.timezone.utc),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'items_per_minute': 0.0,
+ 'log_count/DEBUG': 8,
+ 'log_count/INFO': 18,
+ 'log_count/WARNING': 6,
+ 'request_depth_max': 3,
+ 'response_received_count': 5,
+ 'responses_per_minute': 300.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2025, 6, 17, 14, 24, 11, 820717, tzinfo=datetime.timezone.utc)}
+2025-06-17 21:24:12 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 22:39:22 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 22:39:22 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 22:39:22 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 22:39:22 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 22:39:22 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 22:39:22 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 22:39:22 [scrapy.extensions.telnet] INFO: Telnet Password: 83619af23265cc92
+2025-06-17 22:39:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 22:39:22 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 22:39:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.usera2025-06-17 22:32:49 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 22:32:49 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 22:32:49 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 22:32:49 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 22:32:49 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 22:32:49 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 22:32:49 [scrapy.extensions.telnet] INFO: Telnet Password: e82414d6772c36e5
+2025-06-17 22:32:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 22:32:49 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 22:32:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 22:32:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 22:32:49 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 22:32:49 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 22:32:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 22:32:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 22:32:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 22:32:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 22:32:49 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 22:32:49 [evn_direct_login] INFO: Dữ liệu form: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 22:32:50 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 22:32:50 [evn_direct_login] INFO: Response sau khi đăng nhập: {"state":"success","alert":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng !","data":[]}...
+2025-06-17 22:32:50 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 22:32:50 [evn_direct_login] INFO: Dữ liệu form tra cứu: {'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtMaKhachHang': 'PE13000133890', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlKyHD': '5', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnTraCuu': 'Tra cứu'}
+2025-06-17 22:32:50 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+2025-06-17 22:32:50 [evn_direct_login] INFO: Dữ liệu form cho ajax_ds_hoadon: {'input_makh': 'PE13000133890', 'input_thang': '5', 'input_nam': '2025', 'token': '', 'page': '1'}
+2025-06-17 22:32:50 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/ajax_ds_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 22:32:50 [evn_direct_login] INFO: Response từ ajax_ds_hoadon: {"state":"success","alert":"L\u1ea5y danh h\u00f3a \u0111\u01a1n th\u00e0nh c\u00f4ng","data":{"ds_hoadon":[{"ID_HOADON":"653213125","LOAI_HDON":"TD","LOAI_DCHINH":null,"KY":"1","THANG":"05","NAM":"2025","SO_TIEN":"4.599.130","TIEN_GTGT":"367.930","TONG_TIEN":"4.967.060","TRANGTHAI":0,"TEN_LOAIHD":"Ti\u1ec1n \u0111i\u1ec7n","TONG_TIEN_INT":4967060,"isBaKyHoaDon":0}],"trangHienTai":1,"tongSoTrang":1}}...
+2025-06-17 22:32:50 [evn_direct_login] WARNING: Không tìm thấy liên kết XML trong ajax_ds_hoadon
+2025-06-17 22:32:50 [evn_direct_login] INFO: Response JSON: {"state": "success", "alert": "Lấy danh hóa đơn thành công", "data": {"ds_hoadon": [{"ID_HOADON": "653213125", "LOAI_HDON": "TD", "LOAI_DCHINH": null, "KY": "1", "THANG": "05", "NAM": "2025", "SO_TIEN": "4.599.130", "TIEN_GTGT": "367.930", "TONG_TIEN": "4.967.060", "TRANGTHAI": 0, "TEN_LOAIHD": "Tiền điện", "TONG_TIEN_INT": 4967060, "isBaKyHoaDon": 0}], "trangHienTai": 1, "tongSoTrang": 1}}...
+2025-06-17 22:32:50 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 22:32:50 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3018,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 3,
+ 'downloader/response_bytes': 351630,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'elapsed_time_seconds': 1.273678,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 15, 32, 50, 884460, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': 0.0,
+ 'log_count/DEBUG': 8,
+ 'log_count/INFO': 18,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 3,
+ 'response_received_count': 5,
+ 'responses_per_minute': 300.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2025, 6, 17, 15, 32, 49, 610782, tzinfo=datetime.timezone.utc)}
+2025-06-17 22:32:50 [scrapy.core.engine] INFO: Spider closed (finished)
+gent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 22:39:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 22:39:22 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 22:39:22 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 22:39:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 22:39:22 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 22:39:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 22:39:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 22:39:22 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 22:39:22 [evn_direct_login] INFO: Dữ liệu form: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 22:39:23 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 22:39:23 [evn_direct_login] INFO: Response sau khi đăng nhập: {"state":"success","alert":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng !","data":[]}...
+2025-06-17 22:39:23 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 22:39:23 [evn_direct_login] INFO: Dữ liệu form tra cứu: {'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtMaKhachHang': 'PE13000133890', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlKyHD': '5', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnTraCuu': 'Tra cứu'}
+2025-06-17 22:39:23 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+2025-06-17 22:39:23 [evn_direct_login] INFO: Dữ liệu form cho ajax_ds_hoadon: {'input_makh': 'PE13000133890', 'input_thang': '5', 'input_nam': '2025', 'token': '', 'page': '1'}
+2025-06-17 22:39:23 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/ajax_ds_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 22:39:23 [evn_direct_login] INFO: Response từ ajax_ds_hoadon: {"state":"success","alert":"L\u1ea5y danh h\u00f3a \u0111\u01a1n th\u00e0nh c\u00f4ng","data":{"ds_hoadon":[{"ID_HOADON":"653213125","LOAI_HDON":"TD","LOAI_DCHINH":null,"KY":"1","THANG":"05","NAM":"2025","SO_TIEN":"4.599.130","TIEN_GTGT":"367.930","TONG_TIEN":"4.967.060","TRANGTHAI":0,"TEN_LOAIHD":"Ti\u1ec1n \u0111i\u1ec7n","TONG_TIEN_INT":4967060,"isBaKyHoaDon":0}],"trangHienTai":1,"tongSoTrang":1}}...
+2025-06-17 22:39:23 [evn_direct_login] INFO: Found XML link for ID_HOADON 653213125: https://www.evnhcmc.vn/Tracuu/Download?type=xml&id=653213125
+2025-06-17 22:39:23 [evn_direct_login] INFO: Đã tìm thấy 1 liên kết XML từ ajax_ds_hoadon
+2025-06-17 22:39:23 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.evnhcmc.vn/Tracuu/Download?type=xml&id=653213125> (referer: https://www.evnhcmc.vn/Tracuu/ajax_ds_hoadon)
+2025-06-17 22:39:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.evnhcmc.vn/Tracuu/Download?type=xml&id=653213125>: HTTP status code is not handled or not allowed
+2025-06-17 22:39:23 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 22:39:23 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3706,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/request_method_count/POST': 3,
+ 'downloader/response_bytes': 353480,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 5,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 1.325745,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 15, 39, 23, 977099, tzinfo=datetime.timezone.utc),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'items_per_minute': 0.0,
+ 'log_count/DEBUG': 9,
+ 'log_count/INFO': 20,
+ 'request_depth_max': 4,
+ 'response_received_count': 6,
+ 'responses_per_minute': 360.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2025, 6, 17, 15, 39, 22, 651354, tzinfo=datetime.timezone.utc)}
+2025-06-17 22:39:23 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 22:42:52 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 22:42:52 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 22:42:52 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 22:42:52 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 22:42:52 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 22:42:52 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 22:42:52 [scrapy.extensions.telnet] INFO: Telnet Password: 3f0c5c902c6728b3
+2025-06-17 22:42:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 22:42:52 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 22:42:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 22:42:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 22:42:53 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 22:42:53 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 22:42:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 22:42:53 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 22:42:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 22:42:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 22:42:53 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 22:42:53 [evn_direct_login] INFO: Dữ liệu form: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 22:42:53 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 22:42:53 [evn_direct_login] INFO: Response sau khi đăng nhập: {"state":"success","alert":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng !","data":[]}...
+2025-06-17 22:42:53 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 22:42:53 [evn_direct_login] INFO: Dữ liệu form tra cứu: {'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtMaKhachHang': 'PE13000133890', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlKyHD': '5', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnTraCuu': 'Tra cứu'}
+2025-06-17 22:42:53 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+2025-06-17 22:42:54 [evn_direct_login] INFO: Dữ liệu form cho ajax_ds_hoadon: {'input_makh': 'PE13000133890', 'input_thang': '5', 'input_nam': '2025', 'token': '', 'page': '1'}
+2025-06-17 22:42:54 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/ajax_ds_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 22:42:54 [evn_direct_login] INFO: Response từ ajax_ds_hoadon: {"state":"success","alert":"L\u1ea5y danh h\u00f3a \u0111\u01a1n th\u00e0nh c\u00f4ng","data":{"ds_hoadon":[{"ID_HOADON":"653213125","LOAI_HDON":"TD","LOAI_DCHINH":null,"KY":"1","THANG":"05","NAM":"2025","SO_TIEN":"4.599.130","TIEN_GTGT":"367.930","TONG_TIEN":"4.967.060","TRANGTHAI":0,"TEN_LOAIHD":"Ti\u1ec1n \u0111i\u1ec7n","TONG_TIEN_INT":4967060,"isBaKyHoaDon":0}],"trangHienTai":1,"tongSoTrang":1}}...
+2025-06-17 22:42:54 [evn_direct_login] INFO: Found XML link for ID_HOADON 653213125: https://www.evnhcmc.vn/Tracuu/Download?type=xml&id=653213125
+2025-06-17 22:42:54 [evn_direct_login] INFO: Đã tìm thấy 1 liên kết XML từ ajax_ds_hoadon
+2025-06-17 22:42:54 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.evnhcmc.vn/Tracuu/Download?type=xml&id=653213125> (referer: https://www.evnhcmc.vn/Tracuu/ajax_ds_hoadon)
+2025-06-17 22:42:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.evnhcmc.vn/Tracuu/Download?type=xml&id=653213125>: HTTP status code is not handled or not allowed
+2025-06-17 22:42:54 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 22:42:54 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3706,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/request_method_count/POST': 3,
+ 'downloader/response_bytes': 353275,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 5,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 1.144385,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 15, 42, 54, 343976, tzinfo=datetime.timezone.utc),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'items_per_minute': 0.0,
+ 'log_count/DEBUG': 9,
+ 'log_count/INFO': 20,
+ 'request_depth_max': 4,
+ 'response_received_count': 6,
+ 'responses_per_minute': 360.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2025, 6, 17, 15, 42, 53, 199591, tzinfo=datetime.timezone.utc)}
+2025-06-17 22:42:54 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 22:58:19 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 22:58:19 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 22:58:19 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 22:58:19 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 22:58:19 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 22:58:19 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 22:58:19 [scrapy.extensions.telnet] INFO: Telnet Password: 01872b372f05c76b
+2025-06-17 22:58:19 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 22:58:19 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 22:58:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 22:58:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 22:58:20 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 22:58:20 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 22:58:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 22:58:20 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 22:58:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 22:58:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 22:58:20 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 22:58:20 [evn_direct_login] INFO: Dữ liệu form: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 22:58:20 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 22:58:20 [evn_direct_login] INFO: Response sau khi đăng nhập: {"state":"success","alert":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng !","data":[]}...
+2025-06-17 22:58:20 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 22:58:20 [evn_direct_login] INFO: Dữ liệu form tra cứu: {'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtMaKhachHang': 'PE13000133890', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlKyHD': '5', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnTraCuu': 'Tra cứu'}
+2025-06-17 22:58:20 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+2025-06-17 22:58:20 [evn_direct_login] INFO: Dữ liệu form cho ajax_ds_hoadon: {'input_makh': 'PE13000133890', 'input_thang': '5', 'input_nam': '2025', 'token': '', 'page': '1'}
+2025-06-17 22:58:21 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/ajax_ds_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 22:58:21 [evn_direct_login] INFO: Response từ ajax_ds_hoadon: {"state":"success","alert":"L\u1ea5y danh h\u00f3a \u0111\u01a1n th\u00e0nh c\u00f4ng","data":{"ds_hoadon":[{"ID_HOADON":"653213125","LOAI_HDON":"TD","LOAI_DCHINH":null,"KY":"1","THANG":"05","NAM":"2025","SO_TIEN":"4.599.130","TIEN_GTGT":"367.930","TONG_TIEN":"4.967.060","TRANGTHAI":0,"TEN_LOAIHD":"Ti\u1ec1n \u0111i\u1ec7n","TONG_TIEN_INT":4967060,"isBaKyHoaDon":0}],"trangHienTai":1,"tongSoTrang":1}}...
+2025-06-17 22:58:21 [evn_direct_login] INFO: Sent request to download XML for ID_HOADON 653213125 with makh PE13000133890
+2025-06-17 22:58:21 [evn_direct_login] INFO: Đã gửi 1 request tải XML từ ajax_ds_hoadon
+2025-06-17 22:58:21 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/ajax_tai_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 22:58:21 [scrapy.core.scraper] ERROR: Spider error processing <POST https://www.evnhcmc.vn/Tracuu/ajax_tai_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\core\scraper.py", line 195, in _scrape
+    output = await maybe_deferred_to_future(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\twisted\internet\defer.py", line 1257, in adapt
+    extracted: _SelfResultT | Failure = result.result()
+                                        ^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\core\scraper.py", line 249, in call_spider_async
+    output = callback(result, **result.request.cb_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Đại học\Năm 3\Thực tập\scrapy\invoice_crawler\invoice_crawler\spiders\invoice_spider.py", line 163, in save_xml
+    if 'application/xml' in response.headers.get('Content-Type', '') or response.body:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'str'
+2025-06-17 22:58:21 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 22:58:21 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3794,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 4,
+ 'downloader/response_bytes': 368597,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 6,
+ 'elapsed_time_seconds': 1.352604,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 15, 58, 21, 362769, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': 0.0,
+ 'log_count/DEBUG': 9,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 19,
+ 'request_depth_max': 4,
+ 'response_received_count': 6,
+ 'responses_per_minute': 360.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'spider_exceptions/TypeError': 1,
+ 'spider_exceptions/count': 1,
+ 'start_time': datetime.datetime(2025, 6, 17, 15, 58, 20, 10165, tzinfo=datetime.timezone.utc)}
+2025-06-17 22:58:21 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 23:03:33 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 23:03:33 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 23:03:33 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 23:03:33 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 23:03:33 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 23:03:33 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 23:03:33 [scrapy.extensions.telnet] INFO: Telnet Password: d0d030b7efc6f400
+2025-06-17 23:03:33 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 23:03:33 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 23:03:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 23:03:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 23:03:33 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 23:03:33 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 23:03:33 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 23:03:33 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 23:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 23:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 23:03:33 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 23:03:33 [evn_direct_login] INFO: Dữ liệu form: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 23:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 23:03:34 [evn_direct_login] INFO: Response sau khi đăng nhập: {"state":"success","alert":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng !","data":[]}...
+2025-06-17 23:03:34 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 23:03:34 [evn_direct_login] INFO: Dữ liệu form tra cứu: {'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtMaKhachHang': 'PE13000133890', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlKyHD': '5', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnTraCuu': 'Tra cứu'}
+2025-06-17 23:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+2025-06-17 23:03:34 [evn_direct_login] INFO: Dữ liệu form cho ajax_ds_hoadon: {'input_makh': 'PE13000133890', 'input_thang': '5', 'input_nam': '2025', 'token': '', 'page': '1'}
+2025-06-17 23:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/ajax_ds_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 23:03:34 [evn_direct_login] INFO: Response từ ajax_ds_hoadon: {"state":"success","alert":"L\u1ea5y danh h\u00f3a \u0111\u01a1n th\u00e0nh c\u00f4ng","data":{"ds_hoadon":[{"ID_HOADON":"653213125","LOAI_HDON":"TD","LOAI_DCHINH":null,"KY":"1","THANG":"05","NAM":"2025","SO_TIEN":"4.599.130","TIEN_GTGT":"367.930","TONG_TIEN":"4.967.060","TRANGTHAI":0,"TEN_LOAIHD":"Ti\u1ec1n \u0111i\u1ec7n","TONG_TIEN_INT":4967060,"isBaKyHoaDon":0}],"trangHienTai":1,"tongSoTrang":1}}...
+2025-06-17 23:03:34 [evn_direct_login] INFO: Sent request to download XML for ID_HOADON 653213125 with makh PE13000133890
+2025-06-17 23:03:34 [evn_direct_login] INFO: Đã gửi 1 request tải XML từ ajax_ds_hoadon
+2025-06-17 23:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/ajax_tai_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 23:03:34 [evn_direct_login] INFO: Đã lưu file XML: xml_files\hoa_don_653213125.xml
+2025-06-17 23:03:34 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 23:03:34 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3794,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 4,
+ 'downloader/response_bytes': 368597,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 6,
+ 'elapsed_time_seconds': 1.522976,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 16, 3, 34, 978559, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': 0.0,
+ 'log_count/DEBUG': 9,
+ 'log_count/INFO': 20,
+ 'request_depth_max': 4,
+ 'response_received_count': 6,
+ 'responses_per_minute': 360.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2025, 6, 17, 16, 3, 33, 455583, tzinfo=datetime.timezone.utc)}
+2025-06-17 23:03:34 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 23:07:43 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 23:07:44 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 23:07:44 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 23:07:44 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 23:07:44 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 23:07:44 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 23:07:44 [scrapy.extensions.telnet] INFO: Telnet Password: 72706f9d4a4e0faa
+2025-06-17 23:07:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 23:07:44 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 23:07:44 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 23:07:44 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 23:07:44 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 23:07:44 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 23:07:44 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 23:07:44 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 23:07:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 23:07:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 23:07:44 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 23:07:44 [evn_direct_login] INFO: Dữ liệu form đăng nhập: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 23:07:45 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 23:07:45 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 23:07:45 [evn_direct_login] INFO: Dữ liệu form tra cứu: {'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtMaKhachHang': 'PE13000133890', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlKyHD': '5', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnTraCuu': 'Tra cứu'}
+2025-06-17 23:07:46 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+2025-06-17 23:07:46 [evn_direct_login] INFO: Dữ liệu form cho ajax_ds_hoadon: {'input_makh': 'PE13000133890', 'input_thang': '5', 'input_nam': '2025', 'token': '', 'page': '1'}
+2025-06-17 23:07:46 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/ajax_ds_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 23:07:46 [evn_direct_login] INFO: Nhận response từ ajax_ds_hoadon
+2025-06-17 23:07:46 [scrapy.core.scraper] ERROR: Spider error processing <POST https://www.evnhcmc.vn/Tracuu/ajax_ds_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+Traceback (most recent call last):
+  File "D:\Đại học\Năm 3\Thực tập\scrapy\invoice_crawler\invoice_crawler\spiders\invoice_spider.py", line 93, in parse_hoadon_list
+    result = json.loads(response.text)
+             ^^^^
+NameError: name 'json' is not defined. Did you forget to import 'json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\utils\defer.py", line 343, in iter_errback
+    yield next(it)
+          ^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\utils\python.py", line 369, in __next__
+    return next(self.data)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+             ^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+             ^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+             ^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 59, in process_spider_output
+    yield from super().process_spider_output(response, result, spider)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\spidermiddlewares\base.py", line 58, in process_spider_output
+    for o in result:
+             ^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\scrapy\core\spidermw.py", line 167, in process_sync
+    yield from iterable
+  File "D:\Đại học\Năm 3\Thực tập\scrapy\invoice_crawler\invoice_crawler\spiders\invoice_spider.py", line 128, in parse_hoadon_list
+    except json.JSONDecodeError:
+           ^^^^
+NameError: name 'json' is not defined. Did you forget to import 'json'
+2025-06-17 23:07:46 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 23:07:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3018,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 3,
+ 'downloader/response_bytes': 351425,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'elapsed_time_seconds': 2.194949,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 16, 7, 46, 653345, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': 0.0,
+ 'log_count/DEBUG': 8,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 16,
+ 'request_depth_max': 3,
+ 'response_received_count': 5,
+ 'responses_per_minute': 150.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'spider_exceptions/NameError': 1,
+ 'spider_exceptions/count': 1,
+ 'start_time': datetime.datetime(2025, 6, 17, 16, 7, 44, 458396, tzinfo=datetime.timezone.utc)}
+2025-06-17 23:07:46 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-17 23:10:07 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-17 23:10:07 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.22631-SP0'}
+2025-06-17 23:10:07 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-17 23:10:07 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-17 23:10:07 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-17 23:10:07 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-17 23:10:07 [scrapy.extensions.telnet] INFO: Telnet Password: 7ab242aa5c521b64
+2025-06-17 23:10:07 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-17 23:10:07 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-17 23:10:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-17 23:10:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-17 23:10:08 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-17 23:10:08 [scrapy.core.engine] INFO: Spider opened
+2025-06-17 23:10:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-17 23:10:08 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-17 23:10:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-17 23:10:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-17 23:10:08 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-17 23:10:08 [evn_direct_login] INFO: Dữ liệu form đăng nhập: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-17 23:10:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 23:10:08 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-17 23:10:08 [evn_direct_login] INFO: Dữ liệu form tra cứu: {'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtMaKhachHang': 'PE13000133890', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlKyHD': '5', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnTraCuu': 'Tra cứu'}
+2025-06-17 23:10:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+2025-06-17 23:10:09 [evn_direct_login] INFO: Dữ liệu form cho ajax_ds_hoadon: {'input_makh': 'PE13000133890', 'input_thang': '5', 'input_nam': '2025', 'token': '', 'page': '1'}
+2025-06-17 23:10:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/ajax_ds_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 23:10:09 [evn_direct_login] INFO: Nhận response từ ajax_ds_hoadon
+2025-06-17 23:10:09 [evn_direct_login] INFO: Gửi request tải XML cho ID_HOADON 653213125 với makh PE13000133890
+2025-06-17 23:10:09 [evn_direct_login] INFO: Đã gửi 1 request tải XML
+2025-06-17 23:10:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/ajax_tai_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-17 23:10:09 [evn_direct_login] INFO: Đã lưu file XML: xml_files\hoa_don_653213125.xml
+2025-06-17 23:10:09 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-17 23:10:09 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3794,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 4,
+ 'downloader/response_bytes': 368392,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 6,
+ 'elapsed_time_seconds': 1.297442,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 17, 16, 10, 9, 519458, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': 0.0,
+ 'log_count/DEBUG': 9,
+ 'log_count/INFO': 19,
+ 'request_depth_max': 4,
+ 'response_received_count': 6,
+ 'responses_per_minute': 360.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2025, 6, 17, 16, 10, 8, 222016, tzinfo=datetime.timezone.utc)}
+2025-06-17 23:10:09 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-06-18 14:19:50 [scrapy.utils.log] INFO: Scrapy 2.13.2 started (bot: invoice_crawler)
+2025-06-18 14:19:50 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.4',
+ 'Platform': 'Windows-11-10.0.26100-SP0'}
+2025-06-18 14:19:50 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-18 14:19:50 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-18 14:19:50 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-18 14:19:50 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-18 14:19:50 [scrapy.extensions.telnet] INFO: Telnet Password: c222df40190f5b7c
+2025-06-18 14:19:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-18 14:19:50 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'invoice_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'invoice_crawler.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['invoice_crawler.spiders']}
+2025-06-18 14:19:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-18 14:19:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-18 14:19:50 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-18 14:19:50 [scrapy.core.engine] INFO: Spider opened
+2025-06-18 14:19:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-18 14:19:50 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-18 14:19:50 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): publicsuffix.org:443
+2025-06-18 14:19:51 [urllib3.connectionpool] DEBUG: https://publicsuffix.org:443 "GET /list/public_suffix_list.dat HTTP/1.1" 200 87381
+2025-06-18 14:19:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/robots.txt> (referer: None)
+2025-06-18 14:19:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.evnhcmc.vn/Tracuu/HDDT> (referer: None)
+2025-06-18 14:19:51 [evn_direct_login] INFO: Đang chuẩn bị gửi request đăng nhập...
+2025-06-18 14:19:51 [evn_direct_login] INFO: Dữ liệu form đăng nhập: {'u': '0909484509', 'p': 'Mbf123456@', 'remember': '1', 'token': ''}
+2025-06-18 14:19:51 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Dangnhap/checkLG> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-18 14:19:51 [evn_direct_login] INFO: Đăng nhập thành công!
+2025-06-18 14:19:51 [evn_direct_login] INFO: Dữ liệu form tra cứu: {'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$txtMaKhachHang': 'PE13000133890', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$ddlKyHD': '5', 'ctl00$ctl00$ContentPlaceHolder1$ContentPlaceHolder1$btnTraCuu': 'Tra cứu'}
+2025-06-18 14:19:52 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/HDDT> (referer: https://www.evnhcmc.vn/Dangnhap/checkLG)
+2025-06-18 14:19:52 [evn_direct_login] INFO: Dữ liệu form cho ajax_ds_hoadon: {'input_makh': 'PE13000133890', 'input_thang': '5', 'input_nam': '2025', 'token': '', 'page': '1'}
+2025-06-18 14:19:52 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/ajax_ds_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-18 14:19:52 [evn_direct_login] INFO: Nhận response từ ajax_ds_hoadon
+2025-06-18 14:19:52 [evn_direct_login] INFO: Gửi request tải XML cho ID_HOADON 653213125 với makh PE13000133890
+2025-06-18 14:19:52 [evn_direct_login] INFO: Đã gửi 1 request tải XML
+2025-06-18 14:19:52 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://www.evnhcmc.vn/Tracuu/ajax_tai_hoadon> (referer: https://www.evnhcmc.vn/Tracuu)
+2025-06-18 14:19:52 [evn_direct_login] INFO: Đã lưu file XML: xml_files\hoa_don_653213125.xml
+2025-06-18 14:19:52 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-06-18 14:19:52 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3794,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/request_method_count/POST': 4,
+ 'downloader/response_bytes': 368559,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 6,
+ 'elapsed_time_seconds': 1.661629,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 6, 18, 7, 19, 52, 537910, tzinfo=datetime.timezone.utc),
+ 'items_per_minute': 0.0,
+ 'log_count/DEBUG': 11,
+ 'log_count/INFO': 19,
+ 'request_depth_max': 4,
+ 'response_received_count': 6,
+ 'responses_per_minute': 360.0,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2025, 6, 18, 7, 19, 50, 876281, tzinfo=datetime.timezone.utc)}
+2025-06-18 14:19:52 [scrapy.core.engine] INFO: Spider closed (finished)
