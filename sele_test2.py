@@ -9,6 +9,8 @@ import base64
 # Đo thời gian
 start_time = time.time()
 
+load_dotenv()
+
 print(f"Thời gian chạy 1: {start_time:.2f} giây")
 reader = easyocr.Reader(['vi'], verbose=False)  # Tắt thông báo của easyocr
 
@@ -17,6 +19,8 @@ print(f"Thời gian chạy 2: {current_time - start_time:.2f} giây")
 
 options = webdriver.ChromeOptions() 
 options.add_argument("--headless")
+options.add_argument("--no-sandbox")  # Cần thiết trên Linux
+options.add_argument("--disable-dev-shm-usage")  # Khắc phục lỗi bộ nhớ
 driver = webdriver.Chrome(options = options)
 # driver = webdriver.Chrome()
 

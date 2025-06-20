@@ -7,11 +7,15 @@ import os
 # Đo thời gian
 start_time = time.time()
 
+load_dotenv()
 
 # Thiết lập ChromeDriver
 options = webdriver.ChromeOptions() 
+options.add_argument("--headless")  # Chạy không giao diện
+options.add_argument("--no-sandbox")  # Cần thiết trên Linux
+options.add_argument("--disable-dev-shm-usage")  # Khắc phục lỗi bộ nhớ
 options.add_experimental_option("prefs", {
-    "download.default_directory": r"D:\Học Đại\Thực tập\16_6\Selenium\result",
+    "download.default_directory": os.path.abspath("result"),
     "download.prompt_for_download": False,
     "download.directory_upgrade": True,
     "safebrowsing.enabled": True
@@ -36,7 +40,7 @@ try:
     driver.find_element(By.CLASS_NAME, "btn-submit-login").click()
 
     #Chỉ lấy tháng 5
-    time.sleep(1)
+    time.sleep(2)
         # 3. Tìm tất cả các nút download hóa đơn
     download_buttons = driver.find_element(By.CLASS_NAME, "btn-download-hd")
     driver.execute_script("arguments[0].click();", download_buttons)  # Sử dụng JavaScript để click
